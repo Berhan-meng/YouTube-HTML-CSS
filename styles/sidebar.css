@@ -1,0 +1,82 @@
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  background: white;
+  padding-top: 12px;
+  overflow-y: auto;
+  z-index: 999;
+  border-right: 1px solid #e5e5e5;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  color: #0f0f0f;
+  transition: background-color 0.2s;
+  border-radius: 10px;
+  margin: 0 12px;
+}
+
+.sidebar-item:hover {
+  background-color: #f2f2f2;
+}
+
+.sidebar-item.active {
+  background-color: #e5e5e5;
+  font-weight: 500;
+}
+
+.sidebar-item i {
+  font-size: 20px;
+  margin-right: 24px;
+  width: 24px;
+  text-align: center;
+}
+
+.sidebar-item span {
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Sidebar Section Divider */
+.sidebar-divider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 12px 0;
+}
+
+/* Sidebar Section Title */
+.sidebar-section-title {
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #606060;
+  margin-top: 12px;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Sidebar Scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
