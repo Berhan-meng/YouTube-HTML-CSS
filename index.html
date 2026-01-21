@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
@@ -8,153 +8,384 @@
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/videos.css" />
     <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header Section -->
     <header class="header">
-        <div class="left-section">
-            <button class="menu-btn" aria-label="Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="logo-container">
-                <i class="fab fa-youtube youtube-icon"></i>
-                <span class="logo-text">YouTube</span>
-            </div>
+      <div class="left-section">
+        <button class="menu-btn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo-container">
+          <i class="fab fa-youtube youtube-icon"></i>
+          <span class="logo-text">YouTube</span>
         </div>
-        
-        <div class="middle-section">
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search" />
-                <button class="search-btn" aria-label="Search">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-            <button class="voice-search-btn" aria-label="Voice search">
-                <i class="fas fa-microphone"></i>
-            </button>
+      </div>
+
+      <div class="middle-section">
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
-        
-        <div class="right-section">
-            <button class="header-btn" aria-label="Create">
-                <i class="fas fa-video"></i>
-            </button>
-            <button class="header-btn" aria-label="Apps">
-                <i class="fas fa-th"></i>
-            </button>
-            <button class="header-btn notification-btn" aria-label="Notifications">
-                <i class="fas fa-bell"></i>
-                <span class="notification-count">3</span>
-            </button>
-            <div class="user-profile">
-                <img src="Profile picture/channel-12.jpeg" alt="User profile" />
-            </div>
+        <button class="voice-search-btn" aria-label="Voice search">
+          <i class="fas fa-microphone"></i>
+        </button>
+      </div>
+
+      <div class="right-section">
+        <button class="header-btn" aria-label="Create">
+          <i class="fas fa-video"></i>
+        </button>
+        <button class="header-btn" aria-label="Apps">
+          <i class="fas fa-th"></i>
+        </button>
+        <button class="header-btn notification-btn" aria-label="Notifications">
+          <i class="fas fa-bell"></i>
+          <span class="notification-count">3</span>
+        </button>
+        <div class="user-profile">
+          <img src="Profile picture/channel-12.jpeg" alt="User profile" />
         </div>
+      </div>
     </header>
 
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
-        <a href="#" class="sidebar-item active">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
-        </a>
-        <a href="#" class="sidebar-item">
-            <i class="fas fa-compass"></i>
-            <span>Explore</span>
-        </a>
-        <a href="#" class="sidebar-item">
-            <i class="fas fa-play-circle"></i>
-            <span>Subscriptions</span>
-        </a>
-        <a href="#" class="sidebar-item">
-            <i class="fab fa-youtube"></i>
-            <span>Originals</span>
-        </a>
-        <a href="#" class="sidebar-item">
-            <i class="fas fa-music"></i>
-            <span>YouTube Music</span>
-        </a>
-        <a href="#" class="sidebar-item">
-            <i class="fas fa-archive"></i>
-            <span>Library</span>
-        </a>
+      <a href="#" class="sidebar-item active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fas fa-compass"></i>
+        <span>Explore</span>
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fas fa-play-circle"></i>
+        <span>Subscriptions</span>
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fab fa-youtube"></i>
+        <span>Originals</span>
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fas fa-music"></i>
+        <span>YouTube Music</span>
+      </a>
+      <a href="#" class="sidebar-item">
+        <i class="fas fa-archive"></i>
+        <span>Library</span>
+      </a>
     </nav>
-
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Video Grid -->
-        <div class="videos-grid">
-            <!-- Video Card Template -->
-            <div class="video-card">
-                <div class="thumbnail-container">
-                    <img src="images/thumbnail-1.webp" alt="Talking Tech and AI with Google CEO Sundar Pichai!" class="thumbnail" />
-                    <span class="video-duration">14:20</span>
-                </div>
-                <div class="video-info">
-                    <div class="channel-avatar">
-                        <img src="Profile picture/channel-1.jpeg" alt="Marques Brownlee" />
-                    </div>
-                    <div class="video-details">
-                        <h3 class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</h3>
-                        <p class="channel-name">Marques Brownlee</p>
-                        <div class="video-stats">
-                            <span>3.4M views</span>
-                            <span>•</span>
-                            <span>6 months ago</span>
-                        </div>
-                    </div>
-                </div>
+      <!-- Video Grid -->
+      <div class="videos-grid">
+        <!-- Video Card Template -->
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <img
+              src="images/thumbnail-1.webp"
+              alt="Talking Tech and AI with Google CEO Sundar Pichai!"
+              class="thumbnail"
+            />
+            <span class="video-duration">14:20</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-avatar">
+              <img
+                src="Profile picture/channel-1.jpeg"
+                alt="Marques Brownlee"
+              />
             </div>
-
-            <!-- More video cards would follow the same structure -->
-            <!-- Adding a few more as examples -->
-            <div class="video-card">
-                <div class="thumbnail-container">
-                    <img src="images/thumbnail-2.webp" alt="Try Not To Laugh Challenge #9" class="thumbnail" />
-                    <span class="video-duration">8:22</span>
-                </div>
-                <div class="video-info">
-                    <div class="channel-avatar">
-                        <img src="Profile picture/channel-2.jpeg" alt="Markiplier" />
-                    </div>
-                    <div class="video-details">
-                        <h3 class="video-title">Try Not To Laugh Challenge #9</h3>
-                        <p class="channel-name">Markiplier</p>
-                        <div class="video-stats">
-                            <span>19M views</span>
-                            <span>•</span>
-                            <span>4 years ago</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="video-details">
+              <h3 class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </h3>
+              <p class="channel-name">Marques Brownlee</p>
+              <div class="video-stats">
+                <span>3.4M views</span>
+                <span>•</span>
+                <span>6 months ago</span>
+              </div>
             </div>
-
-            <div class="video-card">
-                <div class="thumbnail-container">
-                    <img src="images/thumbnail-3.webp" alt="Crazy Tik Toks Taken Moments Before DISASTER" class="thumbnail" />
-                    <span class="video-duration">9:13</span>
-                </div>
-                <div class="video-info">
-                    <div class="channel-avatar">
-                        <img src="Profile picture/channel-3.jpeg" alt="SSSniperWolf" />
-                    </div>
-                    <div class="video-details">
-                        <h3 class="video-title">Crazy Tik Toks Taken Moments Before DISASTER</h3>
-                        <p class="channel-name">SSSniperWolf</p>
-                        <div class="video-stats">
-                            <span>12M views</span>
-                            <span>•</span>
-                            <span>1 year ago</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Add remaining video cards here following the same pattern -->
-            <!-- For brevity, I'm showing 3 examples but you would add all 12 -->
+          </div>
         </div>
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <img
+              src="images/thumbnail-2.webp"
+              alt="Try Not To Laugh Challenge #9"
+              class="thumbnail"
+            />
+            <span class="video-duration">8:22</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-avatar">
+              <img src="Profile picture/channel-2.jpeg" alt="Markiplier" />
+            </div>
+            <div class="video-details">
+              <h3 class="video-title">Try Not To Laugh Challenge #9</h3>
+              <p class="channel-name">Markiplier</p>
+              <div class="video-stats">
+                <span>19M views</span>
+                <span>•</span>
+                <span>4 years ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <img
+              src="images/thumbnail-3.webp"
+              alt="Crazy Tik Toks Taken Moments Before DISASTER"
+              class="thumbnail"
+            />
+            <span class="video-duration">9:13</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-avatar">
+              <img src="Profile picture/channel-3.jpeg" alt="SSSniperWolf" />
+            </div>
+            <div class="video-details">
+              <h3 class="video-title">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </h3>
+              <p class="channel-name">SSSniperWolf</p>
+              <div class="video-stats">
+                <span>12M views</span>
+                <span>•</span>
+                <span>1 year ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <img
+              src="images\thumbnail-4.webp"
+              alt="Crazy Tik Toks Taken Moments Before DISASTER"
+              class="thumbnail"
+            />
+            <span class="video-duration">8:10</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-avatar">
+              <img src="Profile picture\channel-4.jpeg" alt="SSSniperWolf" />
+            </div>
+            <div class="video-details">
+              <h3 class="video-title">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              </h3>
+              <p class="channel-name">Veritasium</p>
+              <div class="video-stats">
+                <span>10M views</span>
+                <span>•</span>
+                <span>3 years ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <img
+              src="images\thumbnail-5.webp"
+              alt="Crazy Tik Toks Taken Moments Before DISASTER"
+              class="thumbnail"
+            />
+            <span class="video-duration">6:12</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-avatar">
+              <img src="Profile picture\channel-5.jpeg" alt="SSSniperWolf" />
+            </div>
+            <div class="video-details">
+              <h3 class="video-title">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </h3>
+              <p class="channel-name">CS Dojo</p>
+              <div class="video-stats">
+                <span>3.4M views</span>
+                <span>•</span>
+                <span>4 years ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <img
+              src="images\thumbnail-6.webp"
+              alt="Crazy Tik Toks Taken Moments Before DISASTER"
+              class="thumbnail"
+            />
+            <span class="video-duration">10:00</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-avatar">
+              <img src="Profile picture\channel-6.jpeg" alt="SSSniperWolf" />
+            </div>
+            <div class="video-details">
+              <h3 class="video-title">
+                Anything You Can Fit In The Circle I’ll Pay For
+              </h3>
+              <p class="channel-name">MrBeast</p>
+              <div class="video-stats">
+                <span>4M views</span>
+                <span>•</span>
+                <span>5 years ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="thumbnail-container">
+            <img
+              src="images\thumbnail-7.webp"
+              alt="Crazy Tik Toks Taken Moments Before DISASTER"
+              class="thumbnail"
+            />
+            <span class="video-duration">7:00</span>
+          </div>
+          <div class="video-info">
+            <div class="channel-avatar">
+              <img src="Profile picture\channel-7.jpeg" alt="SSSniperWolf" />
+            </div>
+            <div class="video-details">
+              <h3 class="video-title">
+                Inside The World's Biggest Passenger Plane
+              </h3>
+              <p class="channel-name">Tech Vision</p>
+              <div class="video-stats">
+                <span>2M views</span>
+                <span>•</span>
+                <span>3 years ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+     <div class="video-card">
+  <div class="thumbnail-container">
+    <img src="images\thumbnail-8.webp" alt="The SECRET to Super Human STRENGTH" class="thumbnail" />
+    <span class="video-duration">4:00</span>
+  </div>
+  <div class="video-info">
+    <div class="channel-avatar">
+      <img src="Profile picture\channel-8.jpeg" alt="ThenX" />
+    </div>
+    <div class="video-details">
+      <h3 class="video-title">The SECRET to Super Human STRENGTH</h3>
+      <p class="channel-name">ThenX</p>
+      <div class="video-stats">
+        <span>20M views</span>
+        <span>•</span>
+        <span>3 years ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="video-card">
+  <div class="thumbnail-container">
+    <img src="images\thumbnail-9.webp" alt="The SECRET to Super Human STRENGTH" class="thumbnail" />
+    <span class="video-duration">13:00</span>
+  </div>
+  <div class="video-info">
+    <div class="channel-avatar">
+      <img src="Profile picture\channel-9.jpeg" alt="ThenX" />
+    </div>
+    <div class="video-details">
+      <h3 class="video-title">The SECRET to Super Human STRENGTH</h3>
+      <p class="channel-name">ThenX</p>
+      <div class="video-stats">
+        <span>20M views</span>
+        <span>•</span>
+        <span>3 years ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="video-card">
+  <div class="thumbnail-container">
+    <img src="images\thumbnail-10.webp" alt="How The World's Largest Cruise Ship Makes 30,000 Meals Every Day" class="thumbnail" />
+    <span class="video-duration">2:00</span>
+  </div>
+  <div class="video-info">
+    <div class="channel-avatar">
+      <img src="Profile picture\channel-10.jpeg" alt="Business Insider" />
+    </div>
+    <div class="video-details">
+      <h3 class="video-title">
+        How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+      </h3>
+      <p class="channel-name">Business Insider</p>
+      <div class="video-stats">
+        <span>14M views</span>
+        <span>•</span>
+        <span>1 year ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="video-card">
+  <div class="thumbnail-container">
+    <img src="images\thumbnail-11.webp" alt="Dubai's Crazy Underwater Train and Other Things #Only in Dubai" class="thumbnail" />
+    <span class="video-duration">11:00</span>
+  </div>
+  <div class="video-info">
+    <div class="channel-avatar">
+      <img src="Profile picture\channel-11.jpeg" alt="Destination Tips" />
+    </div>
+    <div class="video-details">
+      <h3 class="video-title">
+        Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+      </h3>
+      <p class="channel-name">Destination Tips</p>
+      <div class="video-stats">
+        <span>3M views</span>
+        <span>•</span>
+        <span>1 year ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="video-card">
+  <div class="thumbnail-container">
+    <img src="images\thumbnail-12.webp" alt="What would happen if you didn't drink water? - Mia Nacamulli" class="thumbnail" />
+    <span class="video-duration">15:00</span>
+  </div>
+  <div class="video-info">
+    <div class="channel-avatar">
+      <img src="Profile picture\channel-12.jpeg" alt="TED-Ed" />
+    </div>
+    <div class="video-details">
+      <h3 class="video-title">
+        What would happen if you didn't drink water? - Mia Nacamulli
+      </h3>
+      <p class="channel-name">TED-Ed</p>
+      <div class="video-stats">
+        <span>12M views</span>
+        <span>•</span>
+        <span>5 years ago</span>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
     </main>
 
-    <script src="script.js"></script>
-</body>
+    <script src="./script/script.js"></script>
+  </body>
 </html>
